@@ -11,6 +11,7 @@ public class Pages {
     private ActivitiesPage activitiesPage;
     private DashboardsPage dashboardsPage;
     private SalesPage salesPage;
+    private GeneralPage generalPage;
 
 
     //getter methods of private variables of pages
@@ -54,5 +55,13 @@ public class Pages {
             salesPage = new SalesPage();
         }
         return salesPage;
+    }
+
+    public GeneralPage general (){
+        if (generalPage == null){
+            generalPage = new GeneralPage();
+        }
+
+        return generalPage;
     }
 }

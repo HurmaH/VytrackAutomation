@@ -5,8 +5,13 @@ public class AppConstants { //this can be interface class also
     //STM_=StoreManager
     //SAM_ =SalesManager
     //CE_ = Calendar Events
+    public static final String LOGIN_ERROR_MESSAGE = "Invalid user name or password.";
+    public static final String LOGIN_PAGE_TITLE = "Login";
+
     public static final String DASHBOARDS_DASHBOARD_PAGE_TITLE = "Dashboard - Dashboards";
     public static final String DASHBOARDS_DASHBOARD_PAGE_NAME = "Dashboard";
+
+    public static final String STM_USERNAME = "Linnie Harris";
 
     public static final String STM_FLEET_VEHICLES_PAGE_TITLE = "All - Car - Entities - System - Car - Entities - System";
     public static final String STM_FLEET_VEHICLES_PAGE_NAME = "All Cars";
@@ -38,6 +43,8 @@ public class AppConstants { //this can be interface class also
 
     public static final String D_ACTIVITIES_PAGE_TITLE = "Calendar Events - Activities";
     public static final String D_ACTIVITIES_PAGE_NAME = "Calendar Events";
+
+    public static final String D_VEHICLE_CONTRACT_ERROR = "You do not have permission to perform this action.";
 
 
 

@@ -32,11 +32,11 @@ public class Driver {
                     driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
                     break;
                 case "firefox":
-                    WebDriverManager.chromedriver().setup();
+                    WebDriverManager.firefoxdriver().setup();
                     driver=new FirefoxDriver();
                     break;
                 case "firefox-headless":
-                    WebDriverManager.chromedriver().setup();
+                    WebDriverManager.firefoxdriver().setup();
                     driver=new FirefoxDriver(new FirefoxOptions().setHeadless(true));
                     break;
                 case "ie":

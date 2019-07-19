@@ -20,8 +20,15 @@ public class FleetPage {
     @FindBy(xpath = "//span[.='Vehicles']")
     public WebElement Vehicles;
 
+    @FindBy(xpath = "//span[.='Vehicle Contracts']")
+    public WebElement VehiclesContracts;
+
+    @FindBy(xpath = "//div[contains(text(),'permission')]")
+    public WebElement VehicleContractError;
+
     @FindBy(className = "oro-subtitle")
     public WebElement FleetPageName;
+
 
 
 }

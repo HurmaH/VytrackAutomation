@@ -50,6 +50,7 @@ public abstract class TestBase {
 //            extentLogger.skip("Test Case Skipped: " + result.getName());
 //        }
 
+        softAssert.assertAll();
         Driver.closeDriver();
     }
 

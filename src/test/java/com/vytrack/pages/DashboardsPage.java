@@ -21,7 +21,7 @@ public class DashboardsPage {
     public WebElement ManageDashboards;
 
     @FindBy(className = "oro-subtitle")
-    public WebElement DashBoardsPageName;
+    public WebElement DashBoardsageName;
 
 
 

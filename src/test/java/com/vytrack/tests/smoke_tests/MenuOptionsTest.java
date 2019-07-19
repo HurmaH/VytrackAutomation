@@ -55,13 +55,14 @@ public class MenuOptionsTest extends TestBase {
     public void storeManagerTest() {
         //    1. Login to Vytrack as a store manager
         pages.login().login("storemanager202", "UserUser123");
+
         Browser.wait(3);
 // 2. Navigate to Dashboards à Dashboard, verify page title Dashboard - Dashboards, verify page name Dashboard
         Browser.hover(pages.dashboards().Dashboards);
         pages.dashboards().Dashboard.click();
         Browser.wait(3);
         softAssert.assertEquals(driver.getTitle(), DASHBOARDS_DASHBOARD_PAGE_TITLE);
-        softAssert.assertEquals(pages.dashboards().DashBoardsPageName.getText(), DASHBOARDS_DASHBOARD_PAGE_NAME);
+        softAssert.assertEquals(pages.dashboards().DashBoardsageName.getText(), DASHBOARDS_DASHBOARD_PAGE_NAME);
 
         //3. Navigate to Fleet à Vehicles, verify page title All - Car - Entities - System - Car - Entities - System, page name All Cars (updated)
         Browser.hover(pages.fleet().Fleet);
