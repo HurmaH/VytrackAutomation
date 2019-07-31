@@ -11,18 +11,26 @@ public class ActivitiesPage {
     public ActivitiesPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
+    @FindBy(className = "oro-subtitle")
+    public WebElement ActivitiesPageName;
 
     @FindBy(xpath = "//span[contains(text(),'Activities')]")
     public WebElement Activities;
 
-    @FindBy (xpath = "//span[.='Calendar Events']")
-    public WebElement CalendarEvents;
-
     @FindBy (xpath = "//span[.='Calls']")
     public WebElement Calls;
 
-    @FindBy(className = "oro-subtitle")
-    public WebElement ActivitiesPageName;
+
+
+    @FindBy (xpath = "//span[.='Calendar Events']")
+    public WebElement CalendarEvents;
+
+    @FindBy (xpath = "//a[contains(text(),'Create')]")
+    public WebElement CreateCalendarEvent;
+
+    @FindBy (id = "recurrence-repeat-view432")
+    public WebElement Reapeat;
+
 
 
 }
